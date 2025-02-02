@@ -12,6 +12,7 @@ import { Amplify } from "aws-amplify";
 import "@aws-amplify/ui-react/styles.css";
 import { generateClient } from "aws-amplify/data";
 import outputs from "../amplify_outputs.json";
+import NoteCreateForm from "../ui-components/NoteCreateForm";
 /**
  * @type {import('aws-amplify/data').Client<import('../amplify/data/resource').Schema>}
  */
@@ -44,6 +45,10 @@ export default function App() {
       margin="0 auto"
     >
       <Heading level={1}>My Profile</Heading>
+
+      <Divider />
+
+      <NoteCreateForm />
 
       <Divider />
 
